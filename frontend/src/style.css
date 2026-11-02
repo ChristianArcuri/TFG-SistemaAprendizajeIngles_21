@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #070a12;
+  --color-panel: #0d1220;
+  --color-muted: #94a3b8;
+  --color-soft: #cbd5e1;
+  --color-primary: #7c3aed;
+  --color-primary-2: #22d3ee;
+  --color-success: #22c55e;
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.34), transparent 28%),
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.2), transparent 32%),
+    var(--color-bg);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.panel {
+  @apply rounded-[22px] border border-white/10 bg-linear-to-b from-white/[0.08] to-white/[0.035] shadow-[0_25px_80px_rgba(0,0,0,0.35)] backdrop-blur-[18px];
+}
+
+.btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-[15px] border-0 px-[18px] py-[13px] font-bold transition;
+}
+
+.btn-primary {
+  @apply bg-linear-to-br from-[#7c3aed] to-[#22d3ee] text-white shadow-[0_16px_44px_rgba(124,58,237,0.35)];
+}
+
+.btn-secondary {
+  @apply border border-white/10 bg-white/[0.07] text-white;
+}
+
+.btn-ghost {
+  @apply border border-white/10 bg-transparent text-[#94a3b8];
+}
+
+.input {
+  @apply w-full rounded-[14px] border border-white/10 bg-white/[0.06] px-[14px] py-[13px] text-white outline-none focus:border-cyan-400/50 focus:ring-4 focus:ring-cyan-400/10;
+}
+
+.select {
+  @apply w-full rounded-[14px] border border-white/10 bg-white/[0.06] px-[14px] py-[13px] text-white outline-none;
+  color-scheme: dark;
+}
+
+.select option {
+  background-color: #111827;
+  color: #f8fafc;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.07] px-[13px] py-[9px] text-[13px] text-[#dbeafe];
+}
+
+.dot {
+  @apply h-2 w-2 rounded-full bg-[#22c55e] shadow-[0_0_22px_#22c55e];
+}
+
+.tag {
+  @apply inline-flex w-fit rounded-full bg-[rgba(124,58,237,0.18)] px-[10px] py-[6px] text-[12px] text-[#ddd6fe];
+}
+
+.meter {
+  @apply h-[9px] overflow-hidden rounded-full bg-white/[0.08];
+}
+
+.meter > span {
+  @apply block h-full rounded-full bg-linear-to-r from-[#7c3aed] to-[#22d3ee];
+}
+
+.gradient-text {
+  @apply bg-linear-to-br from-white via-[#a5f3fc] to-[#c4b5fd] bg-clip-text text-transparent;
+}

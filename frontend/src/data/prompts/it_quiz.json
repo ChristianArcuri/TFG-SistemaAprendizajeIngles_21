@@ -1,0 +1,1448 @@
+{
+  "categoryCode": "it_quiz",
+  "sessionSize": 10,
+  "subtypes": [
+    {
+      "id": "daily_standup",
+      "label": "Daily y standup"
+    },
+    {
+      "id": "deploy_release",
+      "label": "Deploy y release"
+    },
+    {
+      "id": "bugs_fixes",
+      "label": "Bugs y fixes"
+    },
+    {
+      "id": "blockers",
+      "label": "Blockers"
+    },
+    {
+      "id": "pr_review",
+      "label": "PR y code review"
+    },
+    {
+      "id": "apis",
+      "label": "APIs y servicios"
+    },
+    {
+      "id": "database",
+      "label": "Base de datos"
+    },
+    {
+      "id": "incidents",
+      "label": "Incidentes en prod"
+    },
+    {
+      "id": "client_comms",
+      "label": "Cliente y soporte"
+    },
+    {
+      "id": "vocabulary",
+      "label": "Vocabulario IT"
+    }
+  ],
+  "questions": [
+    {
+      "id": "quiz-001",
+      "subtypeId": "daily_standup",
+      "title": "Trabajar en un ticket",
+      "situationEs": "Queres decir: Estoy trabajando en el ticket 245.",
+      "hintEs": "Daily meeting",
+      "options": [
+        "I am working in ticket 245.",
+        "I am working on ticket 245.",
+        "I am working at ticket 245."
+      ],
+      "correctIndex": 1,
+      "explanationEs": "work on + ticket number."
+    },
+    {
+      "id": "quiz-002",
+      "subtypeId": "daily_standup",
+      "title": "Termine ayer",
+      "situationEs": "Queres decir: Ayer termine la integracion con Stripe.",
+      "hintEs": "Standup update",
+      "options": [
+        "Yesterday I finished the Stripe integration.",
+        "Yesterday I finish the Stripe integration.",
+        "Yesterday I have finished Stripe integration done."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Past simple para ayer."
+    },
+    {
+      "id": "quiz-003",
+      "subtypeId": "daily_standup",
+      "title": "Plan de hoy",
+      "situationEs": "Queres decir: Hoy voy a escribir tests para el modulo de pagos.",
+      "hintEs": "What will you do today?",
+      "options": [
+        "Today I will write tests for the payment module.",
+        "Today I am writing tests for payment module finished.",
+        "Today I write tests for the payments module yesterday."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Future plan claro."
+    },
+    {
+      "id": "quiz-004",
+      "subtypeId": "daily_standup",
+      "title": "Sin blockers",
+      "situationEs": "Queres decir: No tengo impedimentos.",
+      "hintEs": "Blockers question",
+      "options": [
+        "I have no blockers.",
+        "I dont have any blockers for now.",
+        "I am without blockers issues."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Ambas opciones 0 y 1 ok; 0 mas concisa."
+    },
+    {
+      "id": "quiz-005",
+      "subtypeId": "daily_standup",
+      "title": "Pair programming",
+      "situationEs": "Queres decir: Hoy hago pair con Maria en el frontend.",
+      "hintEs": "Team update",
+      "options": [
+        "Today I am pairing with Maria on the frontend.",
+        "Today I pair with Maria in the frontend side.",
+        "Today I am doing pair programming with Maria at frontend."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "pair with someone on something."
+    },
+    {
+      "id": "quiz-006",
+      "subtypeId": "daily_standup",
+      "title": "Esperando review",
+      "situationEs": "Queres decir: Estoy esperando el code review para mergear.",
+      "hintEs": "Status update",
+      "options": [
+        "I am waiting for code review before merging.",
+        "I wait code review to merge.",
+        "I am pending of code review for merge."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "waiting for + gerundio/noun."
+    },
+    {
+      "id": "quiz-007",
+      "subtypeId": "daily_standup",
+      "title": "Reunion de equipo",
+      "situationEs": "Queres decir: Tuve la daily y despues una sync con producto.",
+      "hintEs": "Yesterday section",
+      "options": [
+        "I had the daily and then a sync with product.",
+        "I have the daily and a sync with product yesterday.",
+        "I did daily and sync product meeting."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Secuencia en pasado."
+    },
+    {
+      "id": "quiz-008",
+      "subtypeId": "daily_standup",
+      "title": "Focus del dia",
+      "situationEs": "Queres decir: Mi foco hoy es cerrar el bug de login.",
+      "hintEs": "Today focus",
+      "options": [
+        "My focus today is fixing the login bug.",
+        "My focus is today to fix login bug.",
+        "Today my focus are fix the login bug."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "My focus is + gerund/noun."
+    },
+    {
+      "id": "quiz-009",
+      "subtypeId": "daily_standup",
+      "title": "Impedimento externo",
+      "situationEs": "Queres decir: Estoy bloqueado esperando acceso a staging.",
+      "hintEs": "Blocker explanation",
+      "options": [
+        "I am blocked waiting for staging access.",
+        "I am blocked by waiting staging access.",
+        "I have blocker for staging access wait."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "blocked waiting for es natural."
+    },
+    {
+      "id": "quiz-010",
+      "subtypeId": "daily_standup",
+      "title": "Carry over",
+      "situationEs": "Queres decir: Sigo con la misma tarea que ayer.",
+      "hintEs": "Still in progress",
+      "options": [
+        "I am still working on the same task as yesterday.",
+        "I continue same task from yesterday yet.",
+        "I am working the same yesterday task still."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "still working on."
+    },
+    {
+      "id": "quiz-011",
+      "subtypeId": "deploy_release",
+      "title": "Deploy a prod",
+      "situationEs": "Queres decir: Vamos a deployar a produccion esta tarde.",
+      "hintEs": "Release plan",
+      "options": [
+        "We are deploying to production this afternoon.",
+        "We will deploy on production this afternoon.",
+        "We deploy at production today afternoon."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "deploy to production."
+    },
+    {
+      "id": "quiz-012",
+      "subtypeId": "deploy_release",
+      "title": "Rollback",
+      "situationEs": "Queres decir: Hicimos rollback por un error en prod.",
+      "hintEs": "Incident update",
+      "options": [
+        "We rolled back because of a production error.",
+        "We did rollback because production error.",
+        "We rollbacked due error in prod."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "rolled back pasado."
+    },
+    {
+      "id": "quiz-013",
+      "subtypeId": "deploy_release",
+      "title": "Hotfix",
+      "situationEs": "Queres decir: Estamos preparando un hotfix urgente.",
+      "hintEs": "Urgent fix",
+      "options": [
+        "We are preparing an urgent hotfix.",
+        "We prepare hotfix urgent now.",
+        "We are doing hotfix urgent prepare."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "preparing a hotfix."
+    },
+    {
+      "id": "quiz-014",
+      "subtypeId": "deploy_release",
+      "title": "Release notes",
+      "situationEs": "Queres decir: Publicamos las release notes en Confluence.",
+      "hintEs": "Documentation",
+      "options": [
+        "We published the release notes on Confluence.",
+        "We publicated release notes in Confluence.",
+        "We posted release notes to Confluence page."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "published on Confluence."
+    },
+    {
+      "id": "quiz-015",
+      "subtypeId": "deploy_release",
+      "title": "Feature flag",
+      "situationEs": "Queres decir: Activamos la feature con un flag.",
+      "hintEs": "Gradual rollout",
+      "options": [
+        "We enabled the feature behind a flag.",
+        "We activated feature with flag on.",
+        "We turn on feature using flag feature."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "behind a flag es idiomatico."
+    },
+    {
+      "id": "quiz-016",
+      "subtypeId": "deploy_release",
+      "title": "Downtime",
+      "situationEs": "Queres decir: Habra 5 minutos de downtime.",
+      "hintEs": "Maintenance notice",
+      "options": [
+        "There will be about five minutes of downtime.",
+        "It will have 5 minutes downtime about.",
+        "There are 5 minute downtimes."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "There will be + downtime."
+    },
+    {
+      "id": "quiz-017",
+      "subtypeId": "deploy_release",
+      "title": "Staging first",
+      "situationEs": "Queres decir: Primero probamos en staging.",
+      "hintEs": "Process",
+      "options": [
+        "We test in staging first.",
+        "We prove on staging first.",
+        "First we test at staging environment first time."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "test in staging first."
+    },
+    {
+      "id": "quiz-018",
+      "subtypeId": "deploy_release",
+      "title": "Pipeline fallo",
+      "situationEs": "Queres decir: El pipeline de CI fallo en el paso de tests.",
+      "hintEs": "CI status",
+      "options": [
+        "The CI pipeline failed at the test step.",
+        "The CI pipeline failed in tests step.",
+        "CI pipeline was fail on test stage."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "failed at the test step."
+    },
+    {
+      "id": "quiz-019",
+      "subtypeId": "deploy_release",
+      "title": "Version tag",
+      "situationEs": "Queres decir: Taggeamos la version v2.4.1.",
+      "hintEs": "Release tagging",
+      "options": [
+        "We tagged version v2.4.1.",
+        "We tag version v2.4.1 now.",
+        "We did tag of version v2.4.1 release."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "tagged version."
+    },
+    {
+      "id": "quiz-020",
+      "subtypeId": "deploy_release",
+      "title": "Deploy freeze",
+      "situationEs": "Queres decir: No deployamos durante el fin de semana.",
+      "hintEs": "Policy",
+      "options": [
+        "We do not deploy during the weekend.",
+        "We dont deploy on weekend times.",
+        "We are not deploying in weekend period."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "during the weekend."
+    },
+    {
+      "id": "quiz-021",
+      "subtypeId": "bugs_fixes",
+      "title": "Bug reproducido",
+      "situationEs": "Queres decir: Pude reproducir el bug en local.",
+      "hintEs": "Debug update",
+      "options": [
+        "I was able to reproduce the bug locally.",
+        "I could reproduce the bug in local.",
+        "I reproduced bug on my local machine successfully done."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "reproduce locally."
+    },
+    {
+      "id": "quiz-022",
+      "subtypeId": "bugs_fixes",
+      "title": "Root cause",
+      "situationEs": "Queres decir: Encontramos la causa raiz.",
+      "hintEs": "Investigation",
+      "options": [
+        "We found the root cause.",
+        "We found the root reason cause.",
+        "We discover root cause of issue."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "root cause termino fijo."
+    },
+    {
+      "id": "quiz-023",
+      "subtypeId": "bugs_fixes",
+      "title": "Fix deployed",
+      "situationEs": "Queres decir: El fix ya esta en produccion.",
+      "hintEs": "Resolution",
+      "options": [
+        "The fix is already in production.",
+        "The fix is already on production environment.",
+        "Fix was deployed to prod already now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "in production."
+    },
+    {
+      "id": "quiz-024",
+      "subtypeId": "bugs_fixes",
+      "title": "Edge case",
+      "situationEs": "Queres decir: Es un edge case con usuarios sin email.",
+      "hintEs": "Bug description",
+      "options": [
+        "It is an edge case with users without email.",
+        "It is edge case for users that dont have email.",
+        "Edge case happens when user no email."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "edge case with."
+    },
+    {
+      "id": "quiz-025",
+      "subtypeId": "bugs_fixes",
+      "title": "Regresion",
+      "situationEs": "Queres decir: Parece una regresion del ultimo release.",
+      "hintEs": "Hypothesis",
+      "options": [
+        "It looks like a regression from the last release.",
+        "It seems regression of last release maybe.",
+        "Looks regression from release last one."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "regression from the last release."
+    },
+    {
+      "id": "quiz-026",
+      "subtypeId": "bugs_fixes",
+      "title": "Workaround",
+      "situationEs": "Queres decir: Hay un workaround temporal.",
+      "hintEs": "Mitigation",
+      "options": [
+        "There is a temporary workaround.",
+        "There is workaround temporal available.",
+        "We have temporary workaround solution for now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "temporary workaround."
+    },
+    {
+      "id": "quiz-027",
+      "subtypeId": "bugs_fixes",
+      "title": "Logs adjuntos",
+      "situationEs": "Queres decir: Adjunto los logs del error.",
+      "hintEs": "Support email",
+      "options": [
+        "I am attaching the error logs.",
+        "I attach you the error logs here.",
+        "Attached are logs of the error below."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "I am attaching / attached."
+    },
+    {
+      "id": "quiz-028",
+      "subtypeId": "bugs_fixes",
+      "title": "Fix en progreso",
+      "situationEs": "Queres decir: El equipo esta trabajando en el fix.",
+      "hintEs": "Status",
+      "options": [
+        "The team is working on the fix.",
+        "The team works in the fix.",
+        "Team is working for fix the bug."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "working on the fix."
+    },
+    {
+      "id": "quiz-029",
+      "subtypeId": "bugs_fixes",
+      "title": "QA verifico",
+      "situationEs": "Queres decir: QA verifico el fix en staging.",
+      "hintEs": "Verification",
+      "options": [
+        "QA verified the fix in staging.",
+        "QA verified fix on staging environment.",
+        "The fix was verified by QA in staging."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "verified in staging."
+    },
+    {
+      "id": "quiz-030",
+      "subtypeId": "bugs_fixes",
+      "title": "Null pointer",
+      "situationEs": "Queres decir: Era un null pointer cuando faltaba el token.",
+      "hintEs": "Technical cause",
+      "options": [
+        "It was a null pointer when the token was missing.",
+        "It was null pointer because token missing case.",
+        "Null pointer happened for missing token issue."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "when the token was missing."
+    },
+    {
+      "id": "quiz-031",
+      "subtypeId": "blockers",
+      "title": "Blocker claro",
+      "situationEs": "Queres decir: Tengo un blocker con la API de pagos.",
+      "hintEs": "Daily",
+      "options": [
+        "I have a blocker with the payments API.",
+        "I have blocker on payments API integration.",
+        "I am blocked by payments API."
+      ],
+      "correctIndex": 1,
+      "explanationEs": "blocker on es muy usado en agile."
+    },
+    {
+      "id": "quiz-032",
+      "subtypeId": "blockers",
+      "title": "Esperando cliente",
+      "situationEs": "Queres decir: Estoy bloqueado esperando respuesta del cliente.",
+      "hintEs": "External dependency",
+      "options": [
+        "I am blocked waiting for the client response.",
+        "I am blocked by client response wait.",
+        "Blocked for waiting client answer."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "blocked waiting for."
+    },
+    {
+      "id": "quiz-033",
+      "subtypeId": "blockers",
+      "title": "Dependencia otro equipo",
+      "situationEs": "Queres decir: Necesitamos que infra libere el acceso.",
+      "hintEs": "Cross-team",
+      "options": [
+        "We need infra to grant access.",
+        "We need that infra grants access for us.",
+        "Infra must to give access needed."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "need + team + to + verb."
+    },
+    {
+      "id": "quiz-034",
+      "subtypeId": "blockers",
+      "title": "Credenciales",
+      "situationEs": "Queres decir: Sin credenciales no puedo probar.",
+      "hintEs": "Blocker detail",
+      "options": [
+        "Without credentials I cannot test it.",
+        "Without credentials I cant test.",
+        "I cannot test without the credentials available."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Without credentials..."
+    },
+    {
+      "id": "quiz-035",
+      "subtypeId": "blockers",
+      "title": "Prioridad cambiada",
+      "situationEs": "Queres decir: Me pausaron la tarea por una prioridad mas alta.",
+      "hintEs": "Context",
+      "options": [
+        "My task was paused due to a higher priority.",
+        "They paused my task for higher priority item.",
+        "Task paused because priority more high."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "due to a higher priority."
+    },
+    {
+      "id": "quiz-036",
+      "subtypeId": "blockers",
+      "title": "Ambiente caido",
+      "situationEs": "Queres decir: Staging esta caido.",
+      "hintEs": "Environment issue",
+      "options": [
+        "Staging is down.",
+        "Staging is fallen.",
+        "Staging environment has down status."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "is down idiomatico."
+    },
+    {
+      "id": "quiz-037",
+      "subtypeId": "blockers",
+      "title": "Aprobacion pendiente",
+      "situationEs": "Queres decir: Falta aprobacion de seguridad.",
+      "hintEs": "Compliance blocker",
+      "options": [
+        "We are still waiting for security approval.",
+        "Security approval is pending yet.",
+        "We pending security approve."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "waiting for security approval."
+    },
+    {
+      "id": "quiz-038",
+      "subtypeId": "blockers",
+      "title": "Spec incompleta",
+      "situationEs": "Queres decir: No puedo avanzar sin los requisitos claros.",
+      "hintEs": "Requirements",
+      "options": [
+        "I cannot move forward without clear requirements.",
+        "I cant advance without requirements clear.",
+        "Cannot progress without clear specs defined."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "move forward without."
+    },
+    {
+      "id": "quiz-039",
+      "subtypeId": "blockers",
+      "title": "Licencia software",
+      "situationEs": "Queres decir: Esperamos la licencia del tool.",
+      "hintEs": "Procurement",
+      "options": [
+        "We are waiting for the tool license.",
+        "We wait license of tool.",
+        "Pending tool license approval."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "waiting for the tool license."
+    },
+    {
+      "id": "quiz-040",
+      "subtypeId": "blockers",
+      "title": "Sin blocker",
+      "situationEs": "Queres decir: Todo bien, sigo avanzando.",
+      "hintEs": "Positive update",
+      "options": [
+        "Everything is on track.",
+        "All is on track for me.",
+        "I am on track with no issues."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "on track muy usado."
+    },
+    {
+      "id": "quiz-041",
+      "subtypeId": "pr_review",
+      "title": "Review PR",
+      "situationEs": "Queres decir: Podes revisar mi PR cuando puedas?",
+      "hintEs": "Slack",
+      "options": [
+        "Could you review my PR when you have a chance?",
+        "Can you review PR urgent now?",
+        "Please review my pull request when time."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "when you have a chance."
+    },
+    {
+      "id": "quiz-042",
+      "subtypeId": "pr_review",
+      "title": "LGTM",
+      "situationEs": "Queres decir: Aprobe los cambios, se ve bien.",
+      "hintEs": "Approval",
+      "options": [
+        "I approved the changes; looks good to me.",
+        "I approve changes looks good.",
+        "Approved, looks fine for me."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "looks good to me / LGTM culture."
+    },
+    {
+      "id": "quiz-043",
+      "subtypeId": "pr_review",
+      "title": "Cambios menores",
+      "situationEs": "Queres decir: Deje un par de comentarios menores.",
+      "hintEs": "Review feedback",
+      "options": [
+        "I left a couple of minor comments.",
+        "I leave minor comments few.",
+        "Left some small comments to review."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "left comments pasado."
+    },
+    {
+      "id": "quiz-044",
+      "subtypeId": "pr_review",
+      "title": "Merge blocked",
+      "situationEs": "Queres decir: No puedo mergear hasta pasar CI.",
+      "hintEs": "PR status",
+      "options": [
+        "I cannot merge until CI passes.",
+        "I cant merge before CI pass.",
+        "Merge blocked until CI is pass."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "until CI passes."
+    },
+    {
+      "id": "quiz-045",
+      "subtypeId": "pr_review",
+      "title": "Conflicto merge",
+      "situationEs": "Queres decir: Tengo conflictos con main.",
+      "hintEs": "Git issue",
+      "options": [
+        "I have merge conflicts with main.",
+        "I have conflicts merge with main branch.",
+        "Main branch has conflict with my code."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "merge conflicts with main."
+    },
+    {
+      "id": "quiz-046",
+      "subtypeId": "pr_review",
+      "title": "Split PR",
+      "situationEs": "Queres decir: Voy a dividir el PR en dos partes.",
+      "hintEs": "Strategy",
+      "options": [
+        "I will split the PR into two parts.",
+        "I split PR in two parts.",
+        "Going to divide PR on two."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "split into two parts."
+    },
+    {
+      "id": "quiz-047",
+      "subtypeId": "pr_review",
+      "title": "Request changes",
+      "situationEs": "Queres decir: Pedi cambios antes de aprobar.",
+      "hintEs": "Review action",
+      "options": [
+        "I requested changes before approving.",
+        "I request changes before approve it.",
+        "Asked for changes prior approval."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "requested changes before approving."
+    },
+    {
+      "id": "quiz-048",
+      "subtypeId": "pr_review",
+      "title": "Self review",
+      "situationEs": "Queres decir: Hice self-review del codigo.",
+      "hintEs": "Process",
+      "options": [
+        "I did a self-review of the code.",
+        "I self reviewed my code.",
+        "Did self review on code before PR."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "self-review del codigo."
+    },
+    {
+      "id": "quiz-049",
+      "subtypeId": "pr_review",
+      "title": "Address comments",
+      "situationEs": "Queres decir: Ya respondi todos los comentarios.",
+      "hintEs": "Update",
+      "options": [
+        "I addressed all the review comments.",
+        "I answered all comments of review.",
+        "All review comments were addressed now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "addressed comments."
+    },
+    {
+      "id": "quiz-050",
+      "subtypeId": "pr_review",
+      "title": "Large PR",
+      "situationEs": "Queres decir: El PR es grande, avisame si preferis revisarlo por partes.",
+      "hintEs": "Considerate message",
+      "options": [
+        "The PR is large; let me know if you prefer to review it in parts.",
+        "PR is big tell me if review parts.",
+        "Large PR, review partial if you want."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "let me know if you prefer."
+    },
+    {
+      "id": "quiz-051",
+      "subtypeId": "apis",
+      "title": "Timeout API",
+      "situationEs": "Queres decir: La API esta dando timeout.",
+      "hintEs": "Issue report",
+      "options": [
+        "The API is timing out.",
+        "The API is giving timeout errors.",
+        "API has timeout problem occurring."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "timing out verb natural."
+    },
+    {
+      "id": "quiz-052",
+      "subtypeId": "apis",
+      "title": "Rate limit",
+      "situationEs": "Queres decir: Golpeamos el rate limit.",
+      "hintEs": "Incident",
+      "options": [
+        "We hit the rate limit.",
+        "We reached rate limit hit.",
+        "Rate limit was hit by us."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "hit the rate limit."
+    },
+    {
+      "id": "quiz-053",
+      "subtypeId": "apis",
+      "title": "Breaking change",
+      "situationEs": "Queres decir: Hay un breaking change en v2.",
+      "hintEs": "Communication",
+      "options": [
+        "There is a breaking change in v2.",
+        "There is breaking change on version 2.",
+        "v2 has breaking changes new."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "breaking change in v2."
+    },
+    {
+      "id": "quiz-054",
+      "subtypeId": "apis",
+      "title": "Documentacion API",
+      "situationEs": "Queres decir: Actualizamos la documentacion OpenAPI.",
+      "hintEs": "Docs",
+      "options": [
+        "We updated the OpenAPI documentation.",
+        "We updated OpenAPI docs.",
+        "OpenAPI documentation was updated by us."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "updated the OpenAPI documentation."
+    },
+    {
+      "id": "quiz-055",
+      "subtypeId": "apis",
+      "title": "Endpoint nuevo",
+      "situationEs": "Queres decir: Expusimos un endpoint nuevo.",
+      "hintEs": "Release note",
+      "options": [
+        "We exposed a new endpoint.",
+        "We exposed new endpoint to public.",
+        "New endpoint was exposed in API."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "exposed/released a new endpoint."
+    },
+    {
+      "id": "quiz-056",
+      "subtypeId": "apis",
+      "title": "401 errors",
+      "situationEs": "Queres decir: Los usuarios reciben 401.",
+      "hintEs": "Support",
+      "options": [
+        "Users are getting 401 errors.",
+        "Users receive 401 error responses.",
+        "401 is returned to users."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "are getting 401 errors."
+    },
+    {
+      "id": "quiz-057",
+      "subtypeId": "apis",
+      "title": "Payload invalido",
+      "situationEs": "Queres decir: El request body es invalido.",
+      "hintEs": "Validation",
+      "options": [
+        "The request body is invalid.",
+        "Request body invalid format.",
+        "Invalid is the body of request."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "request body is invalid."
+    },
+    {
+      "id": "quiz-058",
+      "subtypeId": "apis",
+      "title": "Webhook retry",
+      "situationEs": "Queres decir: Reintentamos el webhook tres veces.",
+      "hintEs": "Integration",
+      "options": [
+        "We retried the webhook three times.",
+        "We retry webhook 3 times.",
+        "Webhook retried three times by system."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "retried three times."
+    },
+    {
+      "id": "quiz-059",
+      "subtypeId": "apis",
+      "title": "Deprecar endpoint",
+      "situationEs": "Queres decir: Vamos a deprecar este endpoint.",
+      "hintEs": "Sunset plan",
+      "options": [
+        "We are going to deprecate this endpoint.",
+        "We will deprecate endpoint this.",
+        "This endpoint goes deprecated soon."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "deprecate this endpoint."
+    },
+    {
+      "id": "quiz-060",
+      "subtypeId": "apis",
+      "title": "Latencia alta",
+      "situationEs": "Queres decir: La latencia subio a 2 segundos.",
+      "hintEs": "Metrics",
+      "options": [
+        "Latency increased to two seconds.",
+        "Latency went up to 2 seconds.",
+        "High latency of 2 seconds now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "increased to two seconds."
+    },
+    {
+      "id": "quiz-061",
+      "subtypeId": "database",
+      "title": "Query lenta",
+      "situationEs": "Queres decir: Hay una query lenta en prod.",
+      "hintEs": "Performance",
+      "options": [
+        "There is a slow query in production.",
+        "There is slow query on production DB.",
+        "Slow query exists in prod database."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "slow query in production."
+    },
+    {
+      "id": "quiz-062",
+      "subtypeId": "database",
+      "title": "Migracion",
+      "situationEs": "Queres decir: Corremos la migracion esta noche.",
+      "hintEs": "Plan",
+      "options": [
+        "We are running the migration tonight.",
+        "We run migration tonight time.",
+        "Migration will run this night."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "running the migration tonight."
+    },
+    {
+      "id": "quiz-063",
+      "subtypeId": "database",
+      "title": "Indice faltante",
+      "situationEs": "Queres decir: Falta un indice en la tabla orders.",
+      "hintEs": "Optimization",
+      "options": [
+        "An index is missing on the orders table.",
+        "Missing index on orders table exists.",
+        "Orders table needs index missing."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "index is missing on the table."
+    },
+    {
+      "id": "quiz-064",
+      "subtypeId": "database",
+      "title": "Deadlock",
+      "situationEs": "Queres decir: Tuvimos un deadlock en la base.",
+      "hintEs": "Incident",
+      "options": [
+        "We had a deadlock in the database.",
+        "We had deadlock on database layer.",
+        "Database deadlock occurred yesterday."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "deadlock in the database."
+    },
+    {
+      "id": "quiz-065",
+      "subtypeId": "database",
+      "title": "Backup restore",
+      "situationEs": "Queres decir: Restauramos desde el backup.",
+      "hintEs": "Recovery",
+      "options": [
+        "We restored from backup.",
+        "We restored from the backup file.",
+        "Backup was used to restore data."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "restored from backup."
+    },
+    {
+      "id": "quiz-066",
+      "subtypeId": "database",
+      "title": "Connection pool",
+      "situationEs": "Queres decir: Se agotaron las conexiones del pool.",
+      "hintEs": "Ops issue",
+      "options": [
+        "The connection pool was exhausted.",
+        "Connection pool exhausted happened.",
+        "Pool connections ran out."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "connection pool was exhausted."
+    },
+    {
+      "id": "quiz-067",
+      "subtypeId": "database",
+      "title": "Replica lag",
+      "situationEs": "Queres decir: Hay lag en la replica.",
+      "hintEs": "Replication",
+      "options": [
+        "There is replication lag.",
+        "Replica has lag delay.",
+        "Lag exists on read replica."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "replication lag."
+    },
+    {
+      "id": "quiz-068",
+      "subtypeId": "database",
+      "title": "N+1 query",
+      "situationEs": "Queres decir: Encontramos un problema N+1.",
+      "hintEs": "Code review",
+      "options": [
+        "We found an N+1 query issue.",
+        "N+1 problem was found in queries.",
+        "There is N+1 queries problem."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "N+1 query issue."
+    },
+    {
+      "id": "quiz-069",
+      "subtypeId": "database",
+      "title": "Transaction rollback",
+      "situationEs": "Queres decir: La transaccion hizo rollback.",
+      "hintEs": "Behavior",
+      "options": [
+        "The transaction rolled back.",
+        "Transaction did rollback automatically.",
+        "Rollback happened on transaction fail."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "transaction rolled back."
+    },
+    {
+      "id": "quiz-070",
+      "subtypeId": "database",
+      "title": "Schema change",
+      "situationEs": "Queres decir: Cambiamos el schema con cuidado.",
+      "hintEs": "Migration note",
+      "options": [
+        "We changed the schema carefully.",
+        "We change schema careful way.",
+        "Schema was changed with care taken."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "changed the schema carefully."
+    },
+    {
+      "id": "quiz-071",
+      "subtypeId": "incidents",
+      "title": "Incidente P1",
+      "situationEs": "Queres decir: Declaramos un incidente P1.",
+      "hintEs": "Severity",
+      "options": [
+        "We declared a P1 incident.",
+        "We declared P1 incident level.",
+        "P1 incident was declared now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "declared a P1 incident."
+    },
+    {
+      "id": "quiz-072",
+      "subtypeId": "incidents",
+      "title": "Pagina status",
+      "situationEs": "Queres decir: Actualizamos la pagina de status.",
+      "hintEs": "Communication",
+      "options": [
+        "We updated the status page.",
+        "Status page was updated for customers.",
+        "Updated status page with info."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "updated the status page."
+    },
+    {
+      "id": "quiz-073",
+      "subtypeId": "incidents",
+      "title": "Mitigacion",
+      "situationEs": "Queres decir: Aplicamos una mitigacion temporal.",
+      "hintEs": "Response",
+      "options": [
+        "We applied a temporary mitigation.",
+        "Temporary mitigation applied.",
+        "We mitigated temporarily the issue."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "temporary mitigation."
+    },
+    {
+      "id": "quiz-074",
+      "subtypeId": "incidents",
+      "title": "Investigando",
+      "situationEs": "Queres decir: Estamos investigando el impacto.",
+      "hintEs": "Update",
+      "options": [
+        "We are investigating the impact.",
+        "We investigate impact still.",
+        "Impact investigation in progress."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "investigating the impact."
+    },
+    {
+      "id": "quiz-075",
+      "subtypeId": "incidents",
+      "title": "Servicio restaurado",
+      "situationEs": "Queres decir: El servicio volvio a la normalidad.",
+      "hintEs": "Resolution",
+      "options": [
+        "The service is back to normal.",
+        "Service returned to normal state.",
+        "Service normal again now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "back to normal."
+    },
+    {
+      "id": "quiz-076",
+      "subtypeId": "incidents",
+      "title": "Postmortem",
+      "situationEs": "Queres decir: Vamos a hacer un post-mortem.",
+      "hintEs": "Follow-up",
+      "options": [
+        "We will run a post-mortem.",
+        "We will do postmortem meeting.",
+        "Post-mortem scheduled next week."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "run a post-mortem."
+    },
+    {
+      "id": "quiz-077",
+      "subtypeId": "incidents",
+      "title": "Usuarios afectados",
+      "situationEs": "Queres decir: Un 5% de usuarios fue afectado.",
+      "hintEs": "Impact",
+      "options": [
+        "About five percent of users were affected.",
+        "5% users was affected.",
+        "Affected users about five percent."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "users were affected."
+    },
+    {
+      "id": "quiz-078",
+      "subtypeId": "incidents",
+      "title": "Escalar on-call",
+      "situationEs": "Queres decir: Escalamos a on-call.",
+      "hintEs": "Process",
+      "options": [
+        "We escalated to on-call.",
+        "Escalated to on-call engineer.",
+        "On-call was escalated for help."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "escalated to on-call."
+    },
+    {
+      "id": "quiz-079",
+      "subtypeId": "incidents",
+      "title": "Monitoreo alerta",
+      "situationEs": "Queres decir: Saltó una alerta en Datadog.",
+      "hintEs": "Detection",
+      "options": [
+        "An alert fired in Datadog.",
+        "Alert fired on Datadog monitoring.",
+        "Datadog alert triggered us."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "An alert fired."
+    },
+    {
+      "id": "quiz-080",
+      "subtypeId": "incidents",
+      "title": "Comunicar demora",
+      "situationEs": "Queres decir: Avisamos que la resolucion puede tardar.",
+      "hintEs": "Customer comms",
+      "options": [
+        "We notified that resolution may take time.",
+        "We said resolution can take long time.",
+        "Customers notified resolution delay possible."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "resolution may take time."
+    },
+    {
+      "id": "quiz-081",
+      "subtypeId": "client_comms",
+      "title": "Pedir detalles",
+      "situationEs": "Queres decir: Necesitamos mas detalles para reproducir.",
+      "hintEs": "Support email",
+      "options": [
+        "We need more details to reproduce the issue.",
+        "We need more details for reproduce issue.",
+        "Need details to reproduction of bug."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "details to reproduce the issue."
+    },
+    {
+      "id": "quiz-082",
+      "subtypeId": "client_comms",
+      "title": "Disculpa demora",
+      "situationEs": "Queres decir: Disculpas por la demora en responder.",
+      "hintEs": "Apology",
+      "options": [
+        "Sorry for the delay in getting back to you.",
+        "Sorry for delay to answer you.",
+        "Apologies for late response time."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "delay in getting back to you."
+    },
+    {
+      "id": "quiz-083",
+      "subtypeId": "client_comms",
+      "title": "Fix en camino",
+      "situationEs": "Queres decir: El fix esta en camino.",
+      "hintEs": "Update",
+      "options": [
+        "The fix is on the way.",
+        "Fix is coming soon way.",
+        "We send fix on way."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "on the way."
+    },
+    {
+      "id": "quiz-084",
+      "subtypeId": "client_comms",
+      "title": "ETA estimado",
+      "situationEs": "Queres decir: Estimamos resolverlo hoy.",
+      "hintEs": "Timeline",
+      "options": [
+        "We estimate a fix by today.",
+        "We estimate fix today end.",
+        "Estimated resolution is today."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "estimate a fix by today."
+    },
+    {
+      "id": "quiz-085",
+      "subtypeId": "client_comms",
+      "title": "No reproducimos",
+      "situationEs": "Queres decir: Aun no pudimos reproducirlo.",
+      "hintEs": "Status",
+      "options": [
+        "We have not been able to reproduce it yet.",
+        "We cant reproduce yet still.",
+        "Not reproduced until now by us."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "have not been able to reproduce yet."
+    },
+    {
+      "id": "quiz-086",
+      "subtypeId": "client_comms",
+      "title": "Escalar soporte",
+      "situationEs": "Queres decir: Escalo tu caso al equipo tecnico.",
+      "hintEs": "Handoff",
+      "options": [
+        "I am escalating your case to the technical team.",
+        "I escalate case to tech team.",
+        "Your case goes to technical team escalated."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "escalating your case to."
+    },
+    {
+      "id": "quiz-087",
+      "subtypeId": "client_comms",
+      "title": "Gracias reporte",
+      "situationEs": "Queres decir: Gracias por reportar el problema.",
+      "hintEs": "Acknowledgment",
+      "options": [
+        "Thank you for reporting this issue.",
+        "Thanks for report this problem.",
+        "Thank you reporting the issue to us."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "Thank you for reporting."
+    },
+    {
+      "id": "quiz-088",
+      "subtypeId": "client_comms",
+      "title": "Workaround cliente",
+      "situationEs": "Queres decir: Mientras tanto, proba refrescar la pagina.",
+      "hintEs": "Temporary help",
+      "options": [
+        "In the meantime, try refreshing the page.",
+        "Meanwhile refresh page please try.",
+        "Try refresh page as workaround."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "In the meantime, try..."
+    },
+    {
+      "id": "quiz-089",
+      "subtypeId": "client_comms",
+      "title": "Cierre ticket",
+      "situationEs": "Queres decir: Avisanos si podes confirmar que funciona.",
+      "hintEs": "Closing",
+      "options": [
+        "Please let us know if you can confirm it works.",
+        "Tell us if works confirmed please.",
+        "Confirm if working for you now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "let us know if you can confirm."
+    },
+    {
+      "id": "quiz-090",
+      "subtypeId": "client_comms",
+      "title": "Horario soporte",
+      "situationEs": "Queres decir: Nuestro equipo revisara esto en horario laboral.",
+      "hintEs": "Expectations",
+      "options": [
+        "Our team will review this during business hours.",
+        "Team reviews on business hours.",
+        "Will review in business hour schedule."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "during business hours."
+    },
+    {
+      "id": "quiz-091",
+      "subtypeId": "vocabulary",
+      "title": "Actual vs actualmente",
+      "situationEs": "Queres decir: Actualmente estamos migrando.",
+      "hintEs": "False friend",
+      "options": [
+        "We are currently migrating.",
+        "We are actually migrating.",
+        "Actually we migrate now."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "currently vs actually."
+    },
+    {
+      "id": "quiz-092",
+      "subtypeId": "vocabulary",
+      "title": "Assist vs attend",
+      "situationEs": "Queres decir: Voy a asistir a la reunion.",
+      "hintEs": "Meeting",
+      "options": [
+        "I will attend the meeting.",
+        "I will assist the meeting.",
+        "I assist to the meeting tomorrow."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "attend meeting no assist."
+    },
+    {
+      "id": "quiz-093",
+      "subtypeId": "vocabulary",
+      "title": "Comprehend",
+      "situationEs": "Queres decir: Entiendo los requisitos.",
+      "hintEs": "Requirements",
+      "options": [
+        "I understand the requirements.",
+        "I comprehend the requirements.",
+        "I am comprehending requirements."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "understand not comprehend en IT."
+    },
+    {
+      "id": "quiz-094",
+      "subtypeId": "vocabulary",
+      "title": "Eventually meaning",
+      "situationEs": "Queres decir: Al final deployamos el viernes.",
+      "hintEs": "Timeline EN",
+      "options": [
+        "We eventually deployed on Friday.",
+        "We eventually will deploy Friday maybe.",
+        "Eventually we deploy on Friday sure."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "eventually = al final."
+    },
+    {
+      "id": "quiz-095",
+      "subtypeId": "vocabulary",
+      "title": "Resume vs CV",
+      "situationEs": "Queres decir: Actualice mi CV.",
+      "hintEs": "Job search",
+      "options": [
+        "I updated my resume.",
+        "I updated my CV document file.",
+        "My resume CV was updated."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "resume en US English."
+    },
+    {
+      "id": "quiz-096",
+      "subtypeId": "vocabulary",
+      "title": "Sensitive data",
+      "situationEs": "Queres decir: Son datos sensibles.",
+      "hintEs": "Security",
+      "options": [
+        "It is sensitive data.",
+        "It is sensible data.",
+        "Data is sensible information."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "sensitive not sensible."
+    },
+    {
+      "id": "quiz-097",
+      "subtypeId": "vocabulary",
+      "title": "Library vs libreria",
+      "situationEs": "Queres decir: Instalamos una libreria npm.",
+      "hintEs": "Dependencies",
+      "options": [
+        "We installed an npm package.",
+        "We installed a library npm.",
+        "We install npm library package."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "npm package es mas natural."
+    },
+    {
+      "id": "quiz-098",
+      "subtypeId": "vocabulary",
+      "title": "Commit vs compromise",
+      "situationEs": "Queres decir: Hice commit de los cambios.",
+      "hintEs": "Git",
+      "options": [
+        "I committed the changes.",
+        "I compromised the changes in git.",
+        "I did commit of changes files."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "committed the changes."
+    },
+    {
+      "id": "quiz-099",
+      "subtypeId": "vocabulary",
+      "title": "Notify vs notice",
+      "situationEs": "Queres decir: Te aviso cuando este listo.",
+      "hintEs": "Async comms",
+      "options": [
+        "I will notify you when it is ready.",
+        "I will notice you when ready.",
+        "I notify you when is ready done."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "notify you when."
+    },
+    {
+      "id": "quiz-100",
+      "subtypeId": "vocabulary",
+      "title": "Discuss about",
+      "situationEs": "Queres decir: Quiero hablar del diseno.",
+      "hintEs": "Meeting",
+      "options": [
+        "I want to discuss the design.",
+        "I want to discuss about the design.",
+        "Lets discuss about design topic."
+      ],
+      "correctIndex": 0,
+      "explanationEs": "discuss + object sin about."
+    }
+  ]
+}

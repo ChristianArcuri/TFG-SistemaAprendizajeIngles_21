@@ -1,0 +1,21 @@
+Para levantarlo:
+
+En backend, con Docker: 
+cd C:\Christian\pruebas\TFG-SistemaAprendizajeIngles\backend
+docker compose up --build
+La API queda en http://localhost:8080. 
+AI_PROVIDER=mock permite la demo sin clave de OpenAI.
+
+
+En frontend: 
+cd C:\Christian\pruebas\TFG-SistemaAprendizajeIngles\frontend
+npm install
+npm run dev
+
+La interfaz queda en http://localhost:5173.
+go test ./... pasó y el frontend compiló
+
+Usuario de prueba:
+Email: admintfg@gmail.com
+Contraseña: AdminTFG
+----------

@@ -1,0 +1,55 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tfg-sai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-remotetalk}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-remotetalk}
+      POSTGRES_DB: ${POSTGRES_DB:-remotetalk}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-remotetalk} -d ${POSTGRES_DB:-remotetalk}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  migrate:
+    image: migrate/migrate:v4.17.1
+    container_name: tfg-sai-migrate
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./migrations:/migrations
+    command:
+      [
+        "-path=/migrations",
+        "-database=postgres://${POSTGRES_USER:-remotetalk}:${POSTGRES_PASSWORD:-remotetalk}@postgres:5432/${POSTGRES_DB:-remotetalk}?sslmode=disable",
+        "up"
+      ]
+    restart: "no"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tfg-sai-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-remotetalk}:${POSTGRES_PASSWORD:-remotetalk}@postgres:5432/${POSTGRES_DB:-remotetalk}?sslmode=disable
+    ports:
+      - "${HTTP_PORT:-8080}:8080"
+
+volumes:
+  postgres_data:

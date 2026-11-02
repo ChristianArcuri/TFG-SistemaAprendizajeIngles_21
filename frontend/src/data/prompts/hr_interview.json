@@ -1,0 +1,427 @@
+{
+  "categoryCode": "hr_interview",
+  "subtypes": [
+    {
+      "id": "about_you",
+      "label": "Sobre vos y experiencia"
+    },
+    {
+      "id": "strengths_growth",
+      "label": "Fortalezas y debilidades"
+    },
+    {
+      "id": "motivation",
+      "label": "Motivacion y empresa"
+    },
+    {
+      "id": "behavioral",
+      "label": "Situaciones (STAR)"
+    },
+    {
+      "id": "remote_logistics",
+      "label": "Remoto, salario y cierre"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "hr-a001",
+      "subtypeId": "about_you",
+      "title": "Tell me about yourself",
+      "promptText": "Tell me about yourself and your experience as a software developer.",
+      "hintEs": "2-3 minutos: presente, pasado reciente, hacia donde vas.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-a002",
+      "subtypeId": "about_you",
+      "title": "Background resumido",
+      "promptText": "Walk me through your resume. Focus on the most relevant roles for this position.",
+      "hintEs": "No leas el CV; conta la historia.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-a003",
+      "subtypeId": "about_you",
+      "title": "Transicion de carrera",
+      "promptText": "Why did you transition into software development or your current specialty?",
+      "hintEs": "Conecta motivacion con el rol.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-a004",
+      "subtypeId": "about_you",
+      "title": "Proyecto favorito",
+      "promptText": "What project are you most proud of and why?",
+      "hintEs": "STAR ligero: impacto medible.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-a005",
+      "subtypeId": "about_you",
+      "title": "Ultimo rol",
+      "promptText": "Describe your responsibilities in your most recent job.",
+      "hintEs": "Enfocate en lo relevante para la vacante.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-a006",
+      "subtypeId": "about_you",
+      "title": "Aprendizaje reciente",
+      "promptText": "What have you learned in the last six months that improved your work?",
+      "hintEs": "Curiosidad y growth mindset.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-a007",
+      "subtypeId": "about_you",
+      "title": "Trabajo en equipo",
+      "promptText": "How would your teammates describe you?",
+      "hintEs": "Cualidades con ejemplo breve.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-a008",
+      "subtypeId": "about_you",
+      "title": "Por que IT",
+      "promptText": "Why do you enjoy working in tech?",
+      "hintEs": "Autentico, no cliche vacio.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-a009",
+      "subtypeId": "about_you",
+      "title": "Idioma y comunicacion",
+      "promptText": "How comfortable are you communicating in English with international teams?",
+      "hintEs": "Honesto; menciona experiencia remota si tenes.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-a010",
+      "subtypeId": "about_you",
+      "title": "Disponibilidad",
+      "promptText": "Are you currently employed, and what is your notice period?",
+      "hintEs": "Claro y profesional.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-s001",
+      "subtypeId": "strengths_growth",
+      "title": "Fortalezas",
+      "promptText": "What are your greatest strengths as a developer?",
+      "hintEs": "2-3 fortalezas con ejemplos concretos.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-s002",
+      "subtypeId": "strengths_growth",
+      "title": "Debilidades",
+      "promptText": "What is your biggest weakness, and how are you working on it?",
+      "hintEs": "Debilidad real + plan de mejora.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-s003",
+      "subtypeId": "strengths_growth",
+      "title": "Feedback recibido",
+      "promptText": "Tell me about a piece of feedback you received that changed how you work.",
+      "hintEs": "Muestra humildad y accion.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-s004",
+      "subtypeId": "strengths_growth",
+      "title": "Manejo de presion",
+      "promptText": "How do you handle tight deadlines or pressure?",
+      "hintEs": "Ejemplo + estrategia (priorizar, comunicar).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-s005",
+      "subtypeId": "strengths_growth",
+      "title": "Multitasking",
+      "promptText": "How do you prioritize when you have multiple urgent tasks?",
+      "hintEs": "Framework simple: impacto, urgencia.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-s006",
+      "subtypeId": "strengths_growth",
+      "title": "Mentoria",
+      "promptText": "Have you mentored junior developers? What approach do you take?",
+      "hintEs": "Si no, como aprendes de seniors.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-s007",
+      "subtypeId": "strengths_growth",
+      "title": "Errores propios",
+      "promptText": "Tell me about a mistake you made at work. What did you learn?",
+      "hintEs": "STAR: no culpes a otros.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-s008",
+      "subtypeId": "strengths_growth",
+      "title": "Adaptabilidad",
+      "promptText": "Describe a time you had to adapt quickly to a big change at work.",
+      "hintEs": "Cambio de stack, equipo, proceso.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-s009",
+      "subtypeId": "strengths_growth",
+      "title": "Autonomia vs guia",
+      "promptText": "Do you prefer working independently or with close guidance?",
+      "hintEs": "Balance; adaptas al equipo.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-s010",
+      "subtypeId": "strengths_growth",
+      "title": "Crecimiento profesional",
+      "promptText": "Where do you see yourself growing in the next two years?",
+      "hintEs": "Alineado al rol, no CEO en 6 meses.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-m001",
+      "subtypeId": "motivation",
+      "title": "Por que esta empresa",
+      "promptText": "Why do you want to work for our company?",
+      "hintEs": "Investiga la empresa; se especifico.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-m002",
+      "subtypeId": "motivation",
+      "title": "Por que este rol",
+      "promptText": "Why are you interested in this specific role?",
+      "hintEs": "Match skills + interes genuino.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-m003",
+      "subtypeId": "motivation",
+      "title": "Por que dejar empleo",
+      "promptText": "Why are you looking to leave your current job?",
+      "hintEs": "Positivo: crecimiento, no quejas toxicas.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-m004",
+      "subtypeId": "motivation",
+      "title": "Conoces la empresa",
+      "promptText": "What do you know about our product or mission?",
+      "hintEs": "Muestra que investigaste.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-m005",
+      "subtypeId": "motivation",
+      "title": "Cultura",
+      "promptText": "What kind of company culture helps you do your best work?",
+      "hintEs": "Honesto y compatible con remoto/IT.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-m006",
+      "subtypeId": "motivation",
+      "title": "Largo plazo",
+      "promptText": "What are your long-term career goals?",
+      "hintEs": "Coherente con el puesto.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-m007",
+      "subtypeId": "motivation",
+      "title": "Otras ofertas",
+      "promptText": "Are you interviewing with other companies?",
+      "hintEs": "Transparente sin presionar.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-m008",
+      "subtypeId": "motivation",
+      "title": "Que buscas",
+      "promptText": "What are you looking for in your next position?",
+      "hintEs": "Aprendizaje, impacto, equipo, stack.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-m009",
+      "subtypeId": "motivation",
+      "title": "Contribucion",
+      "promptText": "What value would you bring to our team in the first 90 days?",
+      "hintEs": "Realista: onboarding, quick wins.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-m010",
+      "subtypeId": "motivation",
+      "title": "Preguntas para HR",
+      "promptText": "Do you have any questions for us?",
+      "hintEs": "Prepara 2-3 preguntas inteligentes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-b001",
+      "subtypeId": "behavioral",
+      "title": "Conflicto en equipo",
+      "promptText": "Tell me about a conflict with a coworker and how you resolved it.",
+      "hintEs": "STAR: situacion, accion, resultado.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-b002",
+      "subtypeId": "behavioral",
+      "title": "Desacuerdo tecnico",
+      "promptText": "Describe a technical disagreement. How did you handle it?",
+      "hintEs": "Datos, pruebas, respeto.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-b003",
+      "subtypeId": "behavioral",
+      "title": "Proyecto dificil",
+      "promptText": "Tell me about the most challenging project you worked on.",
+      "hintEs": "Que lo hizo dificil y como lo resolviste.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-b004",
+      "subtypeId": "behavioral",
+      "title": "Liderazgo informal",
+      "promptText": "Give an example of when you took initiative without being asked.",
+      "hintEs": "Ownership.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-b005",
+      "subtypeId": "behavioral",
+      "title": "Fallo del equipo",
+      "promptText": "Tell me about a time the team missed a deadline. What was your role?",
+      "hintEs": "Responsabilidad compartida + aprendizaje.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-b006",
+      "subtypeId": "behavioral",
+      "title": "Cliente dificil",
+      "promptText": "Describe dealing with a difficult stakeholder or client.",
+      "hintEs": "Empatia + comunicacion.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-b007",
+      "subtypeId": "behavioral",
+      "title": "Aprender algo nuevo",
+      "promptText": "Tell me about a time you had to learn a new technology quickly.",
+      "hintEs": "Metodo de aprendizaje.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-b008",
+      "subtypeId": "behavioral",
+      "title": "Feedback duro",
+      "promptText": "Describe receiving harsh criticism. How did you respond?",
+      "hintEs": "Profesionalismo.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-b009",
+      "subtypeId": "behavioral",
+      "title": "Mejorar proceso",
+      "promptText": "Tell me about a process you improved on your team.",
+      "hintEs": "Antes/despues, impacto.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-b010",
+      "subtypeId": "behavioral",
+      "title": "Trabajo remoto",
+      "promptText": "How do you stay effective when working remotely with a distributed team?",
+      "hintEs": "Comunicacion, async, overlap hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-r001",
+      "subtypeId": "remote_logistics",
+      "title": "Experiencia remota",
+      "promptText": "Do you have experience working remotely with international teams?",
+      "hintEs": "Ejemplos concretos de colaboracion.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-r002",
+      "subtypeId": "remote_logistics",
+      "title": "Zona horaria",
+      "promptText": "How do you handle time zone differences with teammates?",
+      "hintEs": "Overlap, documentacion, async updates.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-r003",
+      "subtypeId": "remote_logistics",
+      "title": "Home office setup",
+      "promptText": "What does your home office setup look like for focused work?",
+      "hintEs": "Internet, espacio, disponibilidad.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-r004",
+      "subtypeId": "remote_logistics",
+      "title": "Expectativa salarial",
+      "promptText": "What are your salary expectations for this role?",
+      "hintEs": "Rango investigado; flexible si aplica.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-r005",
+      "subtypeId": "remote_logistics",
+      "title": "Freelance vs full-time",
+      "promptText": "Are you open to full-time employment or only contract work?",
+      "hintEs": "Claro segun tu situacion.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-r006",
+      "subtypeId": "remote_logistics",
+      "title": "Fecha de inicio",
+      "promptText": "When would you be available to start?",
+      "hintEs": "Notice period + flexibilidad.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-r007",
+      "subtypeId": "remote_logistics",
+      "title": "Visa / relocation",
+      "promptText": "Do you require visa sponsorship or are you authorized to work remotely for a US/EU company?",
+      "hintEs": "Directo y honesto.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hr-r008",
+      "subtypeId": "remote_logistics",
+      "title": "Beneficios",
+      "promptText": "What benefits or perks matter most to you besides salary?",
+      "hintEs": "Salud, aprendizaje, equipo.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hr-r009",
+      "subtypeId": "remote_logistics",
+      "title": "Por que deberiamos contratarte",
+      "promptText": "Why should we hire you over other candidates?",
+      "hintEs": "Diferenciadores con ejemplos.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hr-r010",
+      "subtypeId": "remote_logistics",
+      "title": "Cierre entrevista",
+      "promptText": "Is there anything else you would like us to know about you?",
+      "hintEs": "Reforza fit cultural y entusiasmo.",
+      "difficulty": "easy"
+    }
+  ]
+}
